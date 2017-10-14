@@ -111,6 +111,7 @@ font-family: 'Roboto', sans-serif;
 
 .professional-box {
     padding: 15px;
+    background-color: #f5f5f5;
 }
 
 #main-body {
@@ -125,4 +126,8 @@ font-family: 'Roboto', sans-serif;
     color: #FFFFFF;
     padding: 10px;
     text-align: center;
+}
+
+.jumbotron {
+    background-color: #7b1fa2;
 }
