@@ -35,6 +35,10 @@ $(document).ready(function () {
         sv = snapshot.val();
         name = sv.name;
         title = sv.title;
+        imgUrl = sv.image_url;
+        videoUrl = sv.video_url;
+        bio = sv.bio;
+        education = sv.education;
 
         // Check that data was loaded correctly
 
@@ -43,7 +47,14 @@ $(document).ready(function () {
 
 
         //Append New rows to employee tables body
+        var pName =  $("<p>").addClass("profile text-center").append(name);
+        var pImg = $("<img>").attr("src", imgUrl);
+        var pTitle =  $("<p>").addClass("profile text-center").append(title);
+        var pBio =  $("<p>").addClass("profile text-center").append(bio);
+        var pVideo =  $("<iframe>").attr("src", videoUrl);
+        var colDiv = $("<div>").addClass("col-md-4").append(pName,pImg,pTitle,pBio,pVideo);
 
+        $("#featured-women").prepend(colDiv);
     });
 
     // function to load specific professional
@@ -80,6 +91,7 @@ $(document).ready(function () {
         console.log('***LIST OF CAREERS***');
 
         //Append data to html
+
 
     });
 
@@ -132,13 +144,13 @@ $(document).ready(function () {
 
     function addProfessionalsData(){
 
-        name = 'Test Name 2';
+        name = 'Test Name 3';
         title = 'Test Position';
         imgUrl = 'https://lh3.googleusercontent.com/X_hN_qLRZ-0cHaHtuiiKIBmQ4TN5uvj1vIJlvNFQjkTm0x7ZdIVQoZlTL5yx8_alBlTpCj0POQgTxo7udb2e9a_KTHXg8f3OWEjZxM2WHTPDhQc4qZriC9G_FQzmoSEg-e0n9J2Wsg=s250-p-k';
         videoUrl = 'https://www.youtube.com/embed/ScMzIvxBSi4';
-        bio = 'Lorem ipsum dolor sit amet, no eos stet utinam munere. Accumsan offendit usu id, at usu adhuc nominavi. Eu atomorum persecuti quaerendum est, vero scripta definitiones at has. Erant delicatissimi vis cu, te duo modo nibh intellegat, quo tollit sententiae ex. Sed an detraxit definitionem, pro detracto intellegat elaboraret id, ad vix vivendo deserunt invenire. Est perpetua intellegam in.';
+        bio = 'Lorem ipsum dolor sit amet, no eos stet utinam munere. Accumsan offendit usu id, at usu adhuc nominavi. Eu atomorum persecuti quaerendum est, vero scripta definitiones at has. Erant delicatissimi vis cu, te duo modo nibh intellegat, quo tollit sententiae ex. Sed an detraxit definitionem, pro detracto intellegat elaboraret id, ad vix vivendo deserunt invenire. Est perpetua intellegam in. Est perpetua intellegam in. Est perpetua intellegam in. Est perpetua intellegam in. Est perpetua intellegam in.';
         education = 'Test Education';
-        id = 'P002';
+        id = 'P003';
 
         // Send data to firebase
         database.ref('/Professionals').push({
@@ -152,6 +164,7 @@ $(document).ready(function () {
         });
 
     }
+
 
 
     function addCareerData(){
