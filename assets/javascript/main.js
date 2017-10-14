@@ -25,11 +25,7 @@ $(document).ready(function () {
     var sv;
 
 
-
     // function to load all professionals
-        //Name
-        //Title
-    console.log('***LIST OF PROFESSIONALS***');
     database.ref('/Professionals').on("child_added", function (snapshot) {
         // Store data in variable sv
         sv = snapshot.val();
@@ -40,31 +36,19 @@ $(document).ready(function () {
         bio = sv.bio;
         education = sv.education;
 
-        // Check that data was loaded correctly
-
-        console.log('NAME: ' + name);
-        console.log('TITLE: ' + title);
-
-
-        //Append New rows to employee tables body
+        //Create html variables for data
         var pName =  $("<p>").addClass("profile text-center").append(name);
         var pImg = $("<img>").attr("src", imgUrl);
         var pTitle =  $("<p>").addClass("profile text-center").append(title);
         var pBio =  $("<p>").addClass("profile text-center").append(bio);
-        var pVideo =  $("<iframe>").attr("src", videoUrl);
+        var pVideo =  $("<iframe>").attr("src", videoUrl).attr("frameborder", 0).attr('allowFullScreen','');
         var colDiv = $("<div>").addClass("col-md-4").append(pName,pImg,pTitle,pBio,pVideo);
 
+        //Append data to featured women div
         $("#featured-women").prepend(colDiv);
     });
 
     // function to load specific professional
-        //Name
-        //Title
-        //Image URL
-        //Video URL
-        //Short Bio
-        //Education
-
     database.ref('/Professionals').orderByChild("identifier").equalTo('P001').on("child_added", function (snapshot) {
         // Store data in variables
         sv = snapshot.val();
@@ -74,24 +58,6 @@ $(document).ready(function () {
         videoUrl = sv.video_url;
         bio = sv.bio;
         education = sv.education;
-
-        // Check that data was loaded correctly
-        console.log('***---------------------***');
-
-        console.log('***SPECIFIC PROFESSIONAL***');
-
-        console.log('NAME: ' + name);
-        console.log('TITLE: ' + title);
-        console.log('EDUCATION: ' + education);
-        console.log('BIO: ' + bio);
-        console.log('IMAGE: ' + imgUrl);
-        console.log('VIDEO ' + videoUrl);
-
-        console.log('***---------------------***');
-        console.log('***LIST OF CAREERS***');
-
-        //Append data to html
-
 
     });
 
