@@ -26,7 +26,7 @@ $(document).ready(function () {
 
 
     // function to load all professionals
-    database.ref('/Professionals').on("child_added", function (snapshot) {
+    database.ref('/Professionals').limitToFirst(3).on("child_added", function (snapshot) {
         // Store data in variable sv
         sv = snapshot.val();
         name = sv.name;

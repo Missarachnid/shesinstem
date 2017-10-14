@@ -14,12 +14,12 @@
     <title>She's In STEM</title>
 
     <!-- Bootstrap, Fonts, Font Awesome, CSS -->
-    <link rel="stylesheet" type="text/css" href="css/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/fontawesome/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <!--Firebase-->
     <script src="https://www.gstatic.com/firebasejs/4.5.1/firebase.js"></script>
@@ -73,40 +73,6 @@
         </div>
     </div>
 </nav>
-<div class="profile-menu hidden">
-    <ul class="pure-menu-list" id="profile-links">
-        <li class="pure-menu-item" id="favorites-link">
-            <a href="favorites.html" class="pure-menu-link">
-                <i class="fa fa-star" aria-hidden="true"></i> Favorites</a>
-        </li>
-        <li class="pure-menu-item" id="sign-out">
-            <a href="#" class="pure-menu-link">
-                <i class="fa fa-sign-out" aria-hidden="true"></i> Sign Out</a>
-        </li>
-        <li class="pure-menu-item" id="sign-in">
-            <a href="#" class="pure-menu-link">
-                <i class="fa fa-sign-out" aria-hidden="true"></i> Sign In</a>
-        </li>
-        <li class="pure-menu-item" id="facebook-sign-in">
-            <a href="#" class="pure-menu-link">
-                <i class="fa fa-facebook" aria-hidden="true"></i> Sign in with Facebook</a>
-        </li>
-    </ul>
-    <form class=" pure-form pure-form-stacked hidden" id="login-form">
-        <fieldset>
-            <legend>Sign In</legend>
-            <label for="email">Email</label>
-            <input id="email" type="email" placeholder="Email">
-            <span class="pure-form-message">This is a required field.</span>
-            <label for="password">Password</label>
-            <input id="password" type="password" placeholder="Password">
-        </fieldset>
-        <a href="#" class="pure-menu-link" id="sign-in-link">
-            <i class="fa fa-star" aria-hidden="true"></i> Sign In</a>
-        <a href="#" class="pure-menu-link" id="create-account-link">
-            <i class="fa fa-star" aria-hidden="true"></i> Create Account</a>
-    </form>
-</div>
 <div id="main-body" class="container-fluid">
     <section id="logo">
         <div class="row">
@@ -139,110 +105,102 @@
             </div><!--END Col-Md-12 Section Women-->
         </div><!--END Row 2 Section Women-->
     </section><!--END Section Women-->
-
     <section id="social-media">
         <p class="social-media-title text-center">Get Involved! Join us on Social Media</p>
-        <div class="row social-media-icons">
-            <div class="col-md-2"><i class="fa fa-facebook-official fa-3x text-center" aria-hidden="true"></i></div>
+        <div class="row social-media-icons text-center">
+            <div class="col-sm-2"><a href="https://www.facebook.com/shesinstem"><i
+                    class="fa fa-facebook-official fa-3x text-center" aria-hidden="true"></i></a></div>
             <!--End Col-2-Md Section Social-Media-->
 
-            <div class="col-md-2"><i class="fa fa-twitter-square fa-3x text-center" aria-hidden="true"></i></div>
+            <div class="col-sm-2"><a href="https://twitter.com/shesinstem"><i
+                    class="fa fa-twitter-square fa-3x text-center" aria-hidden="true"></i></a></div>
             <!--End Col-2-Md Section Social-Media-->
 
-            <div class="col-md-2"><i class="fa fa-instagram fa-3x text-center" aria-hidden="true"></i></div>
+            <div class="col-sm-2"><a href="https://twitter.com/shesinstem"><i class="fa fa-instagram fa-3x text-center"
+                                                                              aria-hidden="true"></i></a></div>
             <!--End Col-2-Md Section Social-Media-->
 
-            <div class="col-md-2"><i class="fa fa-youtube-square fa-3x text-center" aria-hidden="true"></i></div>
+            <div class="col-sm-2"><i class="fa fa-youtube-square fa-3x text-center" aria-hidden="true"></i></div>
             <!--End Col-2-Md Section Social-Media-->
 
-            <div class="col-md-2"><i class="fa fa-linkedin-square fa-3x text-center" aria-hidden="true"></i></div>
+            <div class="col-sm-2"><i class="fa fa-linkedin-square fa-3x text-center" aria-hidden="true"></i></div>
             <!--End Col-2-Md Section Social-Media-->
 
-            <div class="col-md-2"><i class="fa fa-medium fa-3x" aria-hidden="true"></i></div>
-            <!--End Col-2-Md Section Social-Media-->
+            <div class="col-sm-2 text-center"><a href="https://medium.com/shes-in-s-t-e-m"><i class="fa fa-medium fa-3x"
+                                                                                              aria-hidden="true"></i></a>
+            </div><!--End Col-2-Md Section Social-Media-->
 
         </div><!--End Row Section Social-Media-->
-    <div class="row">
-        <div class="col-md-12">
-            <p class="coming-soon text-center">COMING SOON:</p>
-            <p class="coming-soon-item text-center">Mentoring</p>
-            <p class="coming-soon-item text-center">Internships</p>
-            <p class="coming-soon-item text-center">Social Events</p>
-        </div><!--END Col-Md-12 Section Women-->
-    </div><!--END Row 2 Section Women-->
-</section><!--END Section Women-->
+    </section><!--End Section Social-Media-->
 
-<section id="social-media">
-    <p class="social-media-title text-center">Get Involved! Join us on Social Media</p>
-    <div class="row social-media-icons text-center">
-        <div class="col-sm-2"><a href="https://www.facebook.com/shesinstem"><i class="fa fa-facebook-official fa-3x text-center" aria-hidden="true"></i></a></div><!--End Col-2-Md Section Social-Media-->
-
-        <div class="col-sm-2"><a href="https://twitter.com/shesinstem"><i class="fa fa-twitter-square fa-3x text-center" aria-hidden="true"></i></a></div><!--End Col-2-Md Section Social-Media-->
-
-        <div class="col-sm-2"><a href="https://twitter.com/shesinstem"><i class="fa fa-instagram fa-3x text-center" aria-hidden="true"></i></a></div><!--End Col-2-Md Section Social-Media-->
-
-        <div class="col-sm-2"><i class="fa fa-youtube-square fa-3x text-center" aria-hidden="true"></i></div><!--End Col-2-Md Section Social-Media-->
-
-        <div class="col-sm-2"><i class="fa fa-linkedin-square fa-3x text-center" aria-hidden="true"></i></div><!--End Col-2-Md Section Social-Media-->
-
-        <div class="col-sm-2 text-center"><a href="https://medium.com/shes-in-s-t-e-m"><i class="fa fa-medium fa-3x" aria-hidden="true"></i></a></div><!--End Col-2-Md Section Social-Media-->
-
-    </div><!--End Row Section Social-Media-->
-</section><!--End Section Social-Media-->
-
-<section id="contributors">
-    <p class="contributors-title text-center">Meet Our Staff</p>
-    <div class="row">
-        <div class="col-md-3 Melissa text-center">
-            <p class="Melissa text-center">Melissa Kepler</p>
-            <img class="Melissa-photo text-center img-responsive" src="../2017_Hackathon/images/melissa.jpg" alt="Melissa Kepler">
-            <p class="Melissa-twitter text-center">Find me on <a href="https://twitter.com/fwallacephd">Twitter</a></p>
-        </div><!--End Col-Md-3 Row 1 Section Contributors-->
-        <div class="col-md-3 Faith">
-            <p class="LaQuata text-center">LaQuata Sumter</p>
-            <img class="LaQuata-photo text-center img-responsive" src="../2017_Hackathon/images/laQuata-2.jpg" alt="LaQuata Sumter">
-            <p class="LaQuata-twitter text-center">Find me on <a href="https://twitter.com/hi_techpearl27">Twitter</a></p>
-        </div><!--End Col-Md-3 Row 1 Section Contributors-->
-        <div class="col-md-3 text-center">
-            <p class="Valarie text-center">Valarie Regas</p>
-            <img class="Valarie-photo text-center img-responsive" src="../2017_Hackathon/images/valerie.jpg" alt="Valarie Regas">
-            <p class="Melissa-twitter text-center">Find me on the <a href="https://valarier.github.io/valarie-regas/">Web</a></p>
-        </div><!--End Col-Md-3 Row 1 Section Contributors-->
-        <div class="col-md-3 Faith">
-            <p class="Faith-Wallace text-center">Faith H. Wallace, Ph.D.</p>
-            <img class="Faith-Wallace-photo text-center img-responsive" src="../2017_Hackathon/images/faith.jpg" alt="Faith Wallace">
-            <p class="Faith-Wallace-twitter text-center">Find me on <a href="https://twitter.com/fwallacephd">Twitter</a></p>
-        </div><!--End Col-Md-3 Row 1 Section Contributors-->
-    </div><!--End Row 1 Section Contributors-->
-    <div class="row">
-        <div class="col-md-3 text-center">
-            <p class="Crystal text-center">Crystal Bass</p>
-            <img class="Crystal-photo text-center img-responsive" src="../2017_Hackathon/images/crystal.jpg" alt="Crystal Bass">
-            <p class="Crystal-twitter text-center">Find me on <a href="https://twitter.com/crystalbass">Twitter</a></p>
-        </div><!--End Col-Md-3 Row 2 Section Contributors-->
-        <div class="col-md-3 text-center">
-            <p class="Tatiana text-center">Tatiana Williamson</p>
-            <img class="Tatiana-photo text-center img-responsive" src="../2017_Hackathon/images/tatiana.jpg" alt="Tatiana Williamson">
-            <p class="Tatiana-twitter text-center">Find me on <a href="https://twitter.com/TatianaW">Twitter</a></p>
-        </div><!--End Col-Md-3 Row 2 Section Contributors-->
-        <div class="col-md-3 text-center">
-            <p class="Melanie text-center">Melanie Heins</p>
-            <img class="Melanie-photo text-center img-responsive" src="../2017_Hackathon/images/melanie.jpg" alt="Melanie Heins">
-            <p class="Melanie-twitter text-center">Find me on <a href="https://www.linkedin.com/in/mheins/">LinkedIn</a></p>
-        </div><!--End Col-Md-3 Row 2 Section Contributors-->
-        <div class="col-md-3 text-center">
-            <p class="Kimberly text-center">Kimberly Owens</p>
-            <img class="Kimberly-photo text-center img-responsive" src="../2017_Hackathon/images/kimberly.jpg" alt="Kimberly Owens">
-            <p class="Kimberly-twitter text-center">Find me on <a href="https://www.linkedin.com/in/kimberly-owens2232/">LinkedIn</a></p>
-        </div><!--End Col-Md-3 Row 2 Section Contributors-->
-    </div><!--End Row 2 Section Contributors-->
-</section><!--End Section Contributors-->
+    <section id="contributors">
+        <p class="contributors-title text-center">Meet Our Staff</p>
+        <div class="row">
+            <div class="col-md-3 Melissa text-center">
+                <p class="Melissa text-center">Melissa Kepler</p>
+                <img class="Melissa-photo text-center img-responsive" src="assets/images/staff/melissa.jpg"
+                     alt="Melissa Kepler">
+                <p class="Melissa-twitter text-center">Find me on <a href="https://twitter.com/fwallacephd">Twitter</a>
+                </p>
+            </div><!--End Col-Md-3 Row 1 Section Contributors-->
+            <div class="col-md-3 Faith">
+                <p class="LaQuata text-center">LaQuata Sumter</p>
+                <img class="LaQuata-photo text-center img-responsive" src="assets/images/staff/laQuata-2.jpg"
+                     alt="LaQuata Sumter">
+                <p class="LaQuata-twitter text-center">Find me on <a
+                        href="https://twitter.com/hi_techpearl27">Twitter</a></p>
+            </div><!--End Col-Md-3 Row 1 Section Contributors-->
+            <div class="col-md-3 text-center">
+                <p class="Valarie text-center">Valarie Regas</p>
+                <img class="Valarie-photo text-center img-responsive" src="assets/images/staff/valerie.jpg"
+                     alt="Valarie Regas">
+                <p class="Melissa-twitter text-center">Find me on the <a
+                        href="https://valarier.github.io/valarie-regas/">Web</a></p>
+            </div><!--End Col-Md-3 Row 1 Section Contributors-->
+            <div class="col-md-3 Faith">
+                <p class="Faith-Wallace text-center">Faith H. Wallace, Ph.D.</p>
+                <img class="Faith-Wallace-photo text-center img-responsive" src="assets/images/staff/faith.jpg"
+                     alt="Faith Wallace">
+                <p class="Faith-Wallace-twitter text-center">Find me on <a href="https://twitter.com/fwallacephd">Twitter</a>
+                </p>
+            </div><!--End Col-Md-3 Row 1 Section Contributors-->
+        </div><!--End Row 1 Section Contributors-->
+        <div class="row">
+            <div class="col-md-3 text-center">
+                <p class="Crystal text-center">Crystal Bass</p>
+                <img class="Crystal-photo text-center img-responsive" src="assets/images/staff/crystal.jpg"
+                     alt="Crystal Bass">
+                <p class="Crystal-twitter text-center">Find me on <a href="https://twitter.com/crystalbass">Twitter</a>
+                </p>
+            </div><!--End Col-Md-3 Row 2 Section Contributors-->
+            <div class="col-md-3 text-center">
+                <p class="Tatiana text-center">Tatiana Williamson</p>
+                <img class="Tatiana-photo text-center img-responsive" src="assets/images/staff/tatiana.jpg"
+                     alt="Tatiana Williamson">
+                <p class="Tatiana-twitter text-center">Find me on <a href="https://twitter.com/TatianaW">Twitter</a></p>
+            </div><!--End Col-Md-3 Row 2 Section Contributors-->
+            <div class="col-md-3 text-center">
+                <p class="Melanie text-center">Melanie Heins</p>
+                <img class="Melanie-photo text-center img-responsive" src="assets/images/staff/melanie.jpg"
+                     alt="Melanie Heins">
+                <p class="Melanie-twitter text-center">Find me on <a
+                        href="https://www.linkedin.com/in/mheins/">LinkedIn</a></p>
+            </div><!--End Col-Md-3 Row 2 Section Contributors-->
+            <div class="col-md-3 text-center">
+                <p class="Kimberly text-center">Kimberly Owens</p>
+                <img class="Kimberly-photo text-center img-responsive" src="assets/images/staff/kimberly.jpg"
+                     alt="Kimberly Owens">
+                <p class="Kimberly-twitter text-center">Find me on <a
+                        href="https://www.linkedin.com/in/kimberly-owens2232/">LinkedIn</a></p>
+            </div><!--End Col-Md-3 Row 2 Section Contributors-->
+        </div><!--End Row 2 Section Contributors-->
+    </section><!--End Section Contributors-->
 </div>
-<script text="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script text="text/javascript" src="assets/javascript/jquery-3.2.1.min.js"></script>
 
 <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
 
-<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="assets/javascript/bootstrap.js"></script>
 
 <script type="text/javascript" src="assets/javascript/main.js"></script>
 
