@@ -26,7 +26,7 @@ $(document).ready(function () {
 
 
     // function to load all professionals
-    database.ref('/Professionals').limitToFirst(3).on("child_added", function (snapshot) {
+    database.ref('/Professionals').limitToFirst(4).on("child_added", function (snapshot) {
         // Store data in variable sv
         sv = snapshot.val();
         name = sv.name;
@@ -43,7 +43,7 @@ $(document).ready(function () {
         var pBio =  $("<p>").addClass("profile").append(bio);
         var pVideo =  $("<iframe>").attr("src", videoUrl).attr("frameborder", 0).attr('allowFullScreen','').addClass("professional-media");
         var boxDiv = $("<div>").addClass("professional-box").append(pName,pTitle,pImg,pBio,pVideo);
-        var colDiv = $("<div>").addClass("col-md-4").append(boxDiv);
+        var colDiv = $("<div>").addClass("col-md-3").append(boxDiv);
 
         //Append data to featured women div
         $("#featured-women").prepend(colDiv);
@@ -111,13 +111,13 @@ $(document).ready(function () {
 
     function addProfessionalsData(){
 
-        name = 'Test Name 3';
-        title = 'Test Position';
-        imgUrl = 'https://lh3.googleusercontent.com/X_hN_qLRZ-0cHaHtuiiKIBmQ4TN5uvj1vIJlvNFQjkTm0x7ZdIVQoZlTL5yx8_alBlTpCj0POQgTxo7udb2e9a_KTHXg8f3OWEjZxM2WHTPDhQc4qZriC9G_FQzmoSEg-e0n9J2Wsg=s250-p-k';
-        videoUrl = 'https://www.youtube.com/embed/ScMzIvxBSi4';
-        bio = 'Lorem ipsum dolor sit amet, no eos stet utinam munere. Accumsan offendit usu id, at usu adhuc nominavi. Eu atomorum persecuti quaerendum est, vero scripta definitiones at has. Erant delicatissimi vis cu, te duo modo nibh intellegat, quo tollit sententiae ex. Sed an detraxit definitionem, pro detracto intellegat elaboraret id, ad vix vivendo deserunt invenire. Est perpetua intellegam in. Est perpetua intellegam in. Est perpetua intellegam in. Est perpetua intellegam in. Est perpetua intellegam in.';
-        education = 'Test Education';
-        id = 'P003';
+        name = 'Chasity Wright';
+        title = 'Tech CEO and Founder';
+        imgUrl = 'http://drive.google.com/uc?export=view&amp;id=0B49S6PJi30xWb1RKTklGcFpqTW8';
+        videoUrl = 'https://www.youtube.com/embed/UmRgv-Gmgws';
+        bio = 'Chasity is the CEO and Founder of Wright Tek Consulting Group. She is also a veteran of the United States Air Force.';
+        education = '';
+        id = 'P004';
 
         // Send data to firebase
         database.ref('/Professionals').push({
@@ -131,7 +131,6 @@ $(document).ready(function () {
         });
 
     }
-
 
 
     function addCareerData(){
