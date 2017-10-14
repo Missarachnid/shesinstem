@@ -86,30 +86,18 @@ font-family: 'Roboto', sans-serif;
     font-size: 25px;
 }
 
-.Faith,
-.LaQuata,
-.Crystal,
-.Melissa,
-.Tatiana {
+.contributor-name {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
 }
 
-.Faith-Wallace-photo,
-.LaQuata-photo,
-.Crystal-photo,
-.Melissa-photo,
-.Tatiana-photo {
-    width: 50%;
-    text-align: center;
+.contributor-photo {
+    margin: auto;
+    display: block;
 }
 
-.Faith-Wallace-twitter,
-.LaQuata-twitter,
-.Crystal-twitter,
-.Melissa-twitter,
-.Tatiana-twitter {
+.contributor-details {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
@@ -127,4 +115,14 @@ font-family: 'Roboto', sans-serif;
 
 #main-body {
     margin-top: 70px;
+}
+
+.footer {
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 10px;
+    text-align: center;
 }
