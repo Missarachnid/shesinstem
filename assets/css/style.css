@@ -30,6 +30,7 @@ font-family: 'Roboto', sans-serif;
 /*LOGO*/
 .img-logo {
     padding-top: 10px;
+    display: inline;
 }
 
 /*STEM*/
@@ -124,7 +125,7 @@ font-family: 'Roboto', sans-serif;
 }
 
 #main-body {
-    margin-top: 70px;
+    margin-top: 50px;
 }
 
 .footer {
