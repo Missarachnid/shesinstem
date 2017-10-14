@@ -62,7 +62,7 @@ font-family: 'Roboto', sans-serif;
 
 .coming-soon-item {
     font-family: 'Seaweed Script', cursive;
-    font-size: 40px;
+    font-size: 45px;
 }
 
 /*SOCIAL MEDIA*/
@@ -103,10 +103,14 @@ font-family: 'Roboto', sans-serif;
     font-size: 15px;
 }
 
-
 .professional-media {
     margin: auto;
     display: block;
+}
+
+.card-video {
+    width: 100%;
+    min-height: 250px;
 }
 
 .professional-box {
@@ -130,4 +134,8 @@ font-family: 'Roboto', sans-serif;
 
 .jumbotron {
     background-color: #7b1fa2;
+}
+
+.card-body-text {
+    min-height: 165px;
 }
