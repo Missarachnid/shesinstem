@@ -37,12 +37,13 @@ $(document).ready(function () {
         education = sv.education;
 
         //Create html variables for data
-        var pName =  $("<p>").addClass("profile text-center").append(name);
-        var pImg = $("<img>").attr("src", imgUrl);
+        var pName =  $("<h3>").addClass("text-center").append(name);
+        var pImg = $("<img>").attr("src", imgUrl).addClass("professional-media");
         var pTitle =  $("<p>").addClass("profile text-center").append(title);
-        var pBio =  $("<p>").addClass("profile text-center").append(bio);
-        var pVideo =  $("<iframe>").attr("src", videoUrl).attr("frameborder", 0).attr('allowFullScreen','');
-        var colDiv = $("<div>").addClass("col-md-4").append(pName,pImg,pTitle,pBio,pVideo);
+        var pBio =  $("<p>").addClass("profile").append(bio);
+        var pVideo =  $("<iframe>").attr("src", videoUrl).attr("frameborder", 0).attr('allowFullScreen','').addClass("professional-media");
+        var boxDiv = $("<div>").addClass("professional-box").append(pName,pTitle,pImg,pBio,pVideo);
+        var colDiv = $("<div>").addClass("col-md-4").append(boxDiv);
 
         //Append data to featured women div
         $("#featured-women").prepend(colDiv);
