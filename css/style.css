@@ -1,0 +1,115 @@
+/*STEM*/
+
+/*FONTS*/
+/*font-family: 'Anton', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+/*COLORS*/
+/*
+
+/*BODY*/
+* {
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*NAVIGATION*/
+.nav-title {
+    font-family: 'Anton', sans-serif;
+    padding-top: 10px;
+}
+
+.nav-details {
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+}
+
+/*LOGO*/
+.img-logo {
+    font-family: 'Anton', sans-serif;
+    font-size: 45px;
+    border-bottom: 2px solid black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/*STEM*/
+.stem-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+}
+
+/*WOMEN*/
+.women-title {
+    padding-top: 10px;
+    border-top: 2px solid black;
+    font-family: 'Anton', sans-serif;
+    font-size: 35px;
+}
+
+.profile {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.coming-soon {
+    font-family: 'Anton', sans-serif;
+    font-size: 35px;
+}
+
+.coming-soon-item {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+/*SOCIAL MEDIA*/
+.social-media-title {
+    padding-top: 10px;
+    border-top: 2px solid black;
+    font-family: 'Anton', sans-serif;
+    font-size: 25px;
+}
+
+.social-media-icons {
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+}
+
+/*CONTRIBUTORS*/
+.contributors-title {
+    padding-top: 10px;
+    font-family: 'Anton', sans-serif;
+    font-size: 25px;
+}
+
+.Faith,
+.LaQuata,
+.Crystal,
+.Melissa,
+.Tatiana {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+.Faith-Wallace-photo,
+.LaQuata-photo,
+.Crystal-photo,
+.Melissa-photo,
+.Tatiana-photo {
+    width: 50%;
+    text-align: center;
+}
+
+.Faith-Wallace-twitter,
+.LaQuata-twitter,
+.Crystal-twitter,
+.Melissa-twitter,
+.Tatiana-twitter {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
