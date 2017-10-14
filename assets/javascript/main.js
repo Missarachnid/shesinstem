@@ -41,9 +41,14 @@ $(document).ready(function () {
         var pImg = $("<img>").attr("src", imgUrl).addClass("professional-media");
         var pTitle =  $("<p>").addClass("profile text-center").append(title);
         var pBio =  $("<p>").addClass("profile").append(bio);
-        var pVideo =  $("<iframe>").attr("src", videoUrl).attr("frameborder", 0).attr('allowFullScreen','').addClass("professional-media");
-        var boxDiv = $("<div>").addClass("professional-box").append(pName,pTitle,pImg,pBio,pVideo);
-        var colDiv = $("<div>").addClass("col-md-3").append(boxDiv);
+        var pVideo =  $("<iframe>").attr("src", videoUrl).attr("frameborder", 0).attr('allowFullScreen','').addClass("professional-media card-video");
+
+        var cardTitle = $("<div>").addClass("card-content").append(pName,pTitle);
+        var cardImg = $("<div>").addClass("card-image").append(pImg);
+        var cardBody = $("<div>").addClass("card-content card-body-text").append(pBio);
+        var cardVideo = $("<div>").addClass("card-image").append(pVideo);
+        var boxDiv = $("<div>").addClass("card").append(cardTitle,cardImg,cardBody,cardVideo);
+        var colDiv = $("<div>").addClass("col-sm-6 col-md-3").append(boxDiv);
 
         //Append data to featured women div
         $("#featured-women").prepend(colDiv);
@@ -59,7 +64,6 @@ $(document).ready(function () {
         videoUrl = sv.video_url;
         bio = sv.bio;
         education = sv.education;
-
     });
 
 
