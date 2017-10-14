@@ -29,11 +29,7 @@ font-family: 'Roboto', sans-serif;
 
 /*LOGO*/
 .img-logo {
-    font-family: 'Anton', sans-serif;
-    font-size: 45px;
-    border-bottom: 2px solid black;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 10px;
 }
 
 /*STEM*/
@@ -71,12 +67,21 @@ font-family: 'Roboto', sans-serif;
     border-top: 2px solid black;
     font-family: 'Anton', sans-serif;
     font-size: 25px;
+    color: white;
 }
 
 .social-media-icons {
     padding-bottom: 10px;
     border-bottom: 2px solid black;
     text-align: center;
+}
+
+.fa {
+    color: white;
+}
+
+.soc-media {
+    background-color: #7b1fa2;
 }
 
 /*CONTRIBUTORS*/
@@ -134,6 +139,7 @@ font-family: 'Roboto', sans-serif;
 
 .jumbotron {
     background-color: #7b1fa2;
+    text-align: center;
 }
 
 .card-body-text {
