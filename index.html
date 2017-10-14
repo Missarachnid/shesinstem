@@ -16,7 +16,8 @@
     <!-- Bootstrap, Fonts, Font Awesome, CSS -->
     <link rel="stylesheet" type="text/css" href="css/fontawesome/css/font-awesome.min.css">
 
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -32,56 +33,128 @@
 
 <!--BODY-->
 <body>
-<div class="container-fluid">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">She's in Stem</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown open">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="true">About <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">About She's in STM</a></li>
+                        <li><a href="#">How it Works</a></li>
+                        <li><a href="#">About Careers</a></li>
+                        <li><a href="#">Global Testimonials</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i></a></li>
+            </ul>
+            <form class="navbar-form navbar-right">
+                <input type="text" class="form-control" placeholder="Search...">
+            </form>
+        </div>
+    </div>
+</nav>
+<div class="profile-menu hidden">
+    <ul class="pure-menu-list" id="profile-links">
+        <li class="pure-menu-item" id="favorites-link">
+            <a href="favorites.html" class="pure-menu-link">
+                <i class="fa fa-star" aria-hidden="true"></i> Favorites</a>
+        </li>
+        <li class="pure-menu-item" id="sign-out">
+            <a href="#" class="pure-menu-link">
+                <i class="fa fa-sign-out" aria-hidden="true"></i> Sign Out</a>
+        </li>
+        <li class="pure-menu-item" id="sign-in">
+            <a href="#" class="pure-menu-link">
+                <i class="fa fa-sign-out" aria-hidden="true"></i> Sign In</a>
+        </li>
+        <li class="pure-menu-item" id="facebook-sign-in">
+            <a href="#" class="pure-menu-link">
+                <i class="fa fa-facebook" aria-hidden="true"></i> Sign in with Facebook</a>
+        </li>
+    </ul>
+    <form class=" pure-form pure-form-stacked hidden" id="login-form">
+        <fieldset>
+            <legend>Sign In</legend>
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Email">
+            <span class="pure-form-message">This is a required field.</span>
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="Password">
+        </fieldset>
+        <a href="#" class="pure-menu-link" id="sign-in-link">
+            <i class="fa fa-star" aria-hidden="true"></i> Sign In</a>
+        <a href="#" class="pure-menu-link" id="create-account-link">
+            <i class="fa fa-star" aria-hidden="true"></i> Create Account</a>
+    </form>
+</div>
+<div id="main-body" class="container-fluid">
+    <section id="logo">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="img-logo text-center">LOGO GOES HERE</p>
+            </div><!--End Col-12-Md Section Logo-->
+        </div><!--End Row Section Logo-->
+    </section><!--End Section Logo-->
 
-<section id="navigation">
-    <!--Need a nav bar with a search bar and a drop down menu for sign in profiles-->
-    <p class="nav-title text-center">Navigation Bar Place Holder</p>
-    <p class="nav-details text-center">Need search bar and a Sign in (dropdown)</p>
-</section>
+    <section id="stem">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="stem-title text-center">Learn & Apply</p>
+                <p class="stem-title text-center">Your STEM</p>
+            </div><!--End Col-Md-12 Section STEM-->
+        </div><!--End Row Section STEM-->
+    </section><!--End Section STEM-->
 
-<section id="logo">
-   <div class="row">
-       <div class="col-md-12">
-           <p class="img-logo text-center">LOGO GOES HERE</p>
-       </div><!--End Col-12-Md Section Logo-->
-   </div><!--End Row Section Logo-->
-</section><!--End Section Logo-->
+    <section id="women">
+        <p class="women-title text-center">Women In STEM</p>
+        <div id="featured-women" class="row">
+            <!--End Col-4-Md Section Women-->
+        </div><!--End Row 1 Section Women-->
+        <div class="row">
+            <div class="col-md-12">
+                <p class="coming-soon text-center">COMING SOON:</p>
+                <p class="coming-soon-item text-center">Mentoring</p>
+                <p class="coming-soon-item text-center">Internships</p>
+                <p class="coming-soon-item text-center">Social Events</p>
+            </div><!--END Col-Md-12 Section Women-->
+        </div><!--END Row 2 Section Women-->
+    </section><!--END Section Women-->
 
-<section id="stem">
-    <div class="row">
-        <div class="col-md-12">
-            <p class="stem-title text-center">Learn & Apply</p>
-            <p class="stem-title text-center">Your STEM</p>
-        </div><!--End Col-Md-12 Section STEM-->
-    </div><!--End Row Section STEM-->
-</section><!--End Section STEM-->
+    <section id="social-media">
+        <p class="social-media-title text-center">Get Involved! Join us on Social Media</p>
+        <div class="row social-media-icons">
+            <div class="col-md-2"><i class="fa fa-facebook-official fa-3x text-center" aria-hidden="true"></i></div>
+            <!--End Col-2-Md Section Social-Media-->
 
-<section id="women">
-   <p class="women-title text-center">Women In STEM</p>
-    <div class="row">
-        <div class="col-md-4">
-            <p class="profile text-center"><strong>Profile 1: Name</strong></p>
-            <p class="profile text-center">Image of Woman</p>
-            <p class="profile text-center">Title of Position</p>
-            <p class="profile text-center">Short bio of Woman</p>
-            <p class="profile text-center">Video</p>
-            </div><!--End Col-4-Md Section Women-->
-        <div class="col-md-4">
-            <p class="profile text-center"><strong>Profile 1: Name</strong></p>
-            <p class="profile text-center">Image of Woman</p>
-            <p class="profile text-center">Title of Position</p>
-            <p class="profile text-center">Short bio of Woman</p>
-            <p class="profile text-center">Video</p>
-            </div><!--End Col-4-Md Section Women-->
-        <div class="col-md-4">
-            <p class="profile text-center"><strong>Profile 1: Name</strong></p>
-            <p class="profile text-center">Image of Woman</p>
-            <p class="profile text-center">Title of Position</p>
-            <p class="profile text-center">Short bio of Woman</p>
-            <p class="profile text-center">Video</p>
-            </div><!--End Col-4-Md Section Women-->
-    </div><!--End Row 1 Section Women-->
+            <div class="col-md-2"><i class="fa fa-twitter-square fa-3x text-center" aria-hidden="true"></i></div>
+            <!--End Col-2-Md Section Social-Media-->
+
+            <div class="col-md-2"><i class="fa fa-instagram fa-3x text-center" aria-hidden="true"></i></div>
+            <!--End Col-2-Md Section Social-Media-->
+
+            <div class="col-md-2"><i class="fa fa-youtube-square fa-3x text-center" aria-hidden="true"></i></div>
+            <!--End Col-2-Md Section Social-Media-->
+
+            <div class="col-md-2"><i class="fa fa-linkedin-square fa-3x text-center" aria-hidden="true"></i></div>
+            <!--End Col-2-Md Section Social-Media-->
+
+            <div class="col-md-2"><i class="fa fa-medium fa-3x" aria-hidden="true"></i></div>
+            <!--End Col-2-Md Section Social-Media-->
+
+        </div><!--End Row Section Social-Media-->
     <div class="row">
         <div class="col-md-12">
             <p class="coming-soon text-center">COMING SOON:</p>
@@ -158,13 +231,13 @@
     </div><!--End Row 2 Section Contributors-->
 </section><!--End Section Contributors-->
 </div>
-    <script text="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script text="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 
-    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
 
-    <script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
 
-    <script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="assets/javascript/main.js"></script>
 
-   </body>
+</body>
 </html>

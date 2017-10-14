@@ -76,6 +76,7 @@ font-family: 'Roboto', sans-serif;
 .social-media-icons {
     padding-bottom: 10px;
     border-bottom: 2px solid black;
+    text-align: center;
 }
 
 /*CONTRIBUTORS*/
@@ -112,4 +113,18 @@ font-family: 'Roboto', sans-serif;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
+}
+
+
+.professional-media {
+    margin: auto;
+    display: block;
+}
+
+.professional-box {
+    padding: 15px;
+}
+
+#main-body {
+    margin-top: 70px;
 }
