@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
     <meta name="description" content="She's In STEM"/>
 
     <title>She's In STEM</title>
@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <!-- Our CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Materialize Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Firebase-->
     <script src="https://www.gstatic.com/firebasejs/4.5.1/firebase.js"></script>
     <!--FONTS-->
@@ -53,6 +55,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html">Home</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                        aria-expanded="true">About <span class="caret"></span></a>
@@ -82,7 +85,7 @@
 </nav>
 <div id="main-body" class="jumbotron">
     <div class="container">
-        <img class="img-logo img-responsive" src="assets/images/logowhitewithtext2.png">
+        <img class="img-logo img-responsive" src="assets/images/logowhitewithtext4.png" alt="Logo - She's in STEM">
     </div>
 </div>
 <div class="container-fluid">
@@ -90,11 +93,11 @@
         <div class="row">
             <div class="col-xs-12">
                 <p class="stem-title text-center">Learn & Apply Your</p>
-                <div class="stem-link-container text-center">
-                    <a href="stem-career-list.html"><img class="stem-letter" src="assets/images/stem/s.png"></a>
-                    <a href="stem-career-list.html"><img class="stem-letter" src="assets/images/stem/t.png"></a>
-                    <a href="stem-career-list.html"><img class="stem-letter" src="assets/images/stem/e.png"></a>
-                    <a href="stem-career-list.html"><img class="stem-letter" src="assets/images/stem/m.png"></a>
+                <div id="stem-link-container" class="text-center">
+                    <a class="" href="stem-career-list.html"><img class="stem-letter z-depth-3" src="assets/images/stem/s2.png" alt="Science" type="S"></a>
+                    <a class="" href="stem-career-list.html"><img class="stem-letter z-depth-3" src="assets/images/stem/t2.png" alt="Technology" type="T"></a>
+                    <a class="" href="stem-career-list.html"><img class="stem-letter z-depth-3" src="assets/images/stem/e2.png" alt="Engineering" type="E"></a>
+                    <a class="" href="stem-career-list.html"><img class="stem-letter z-depth-3" src="assets/images/stem/m2.png" alt="Math" type="M"></a>
                 </div>
             </div><!--End Col-Md-12 Section STEM-->
         </div><!--End Row Section STEM-->
@@ -102,7 +105,7 @@
 
     <section id="careers">
         <p class="career-title text-center"><span id="career-type"></span>Careers</p>
-        <div id="featured-science-careers" class="row">
+        <div id="featured-careers" class="row">
             <!--End Col-4-Md Section Careers-->
         </div><!--End Row 1 Section Careers-->
     </section><!--END Section Women-->
