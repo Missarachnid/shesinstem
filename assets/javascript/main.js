@@ -37,17 +37,17 @@ $(document).ready(function () {
         education = sv.education;
 
         //Create html variables for data
-        var pName =  $("<h3>").addClass("text-center").append(name);
+        var pName = $("<h3>").addClass("text-center").append(name);
         var pImg = $("<img>").attr("src", imgUrl).addClass("professional-media");
-        var pTitle =  $("<p>").addClass("profile text-center").append(title);
-        var pBio =  $("<p>").addClass("profile").append(bio);
-        var pVideo =  $("<iframe>").attr("src", videoUrl).attr("frameborder", 0).attr('allowFullScreen','').addClass("professional-media card-video");
+        var pTitle = $("<p>").addClass("profile text-center").append(title);
+        var pBio = $("<p>").addClass("profile").append(bio);
+        var pVideo = $("<iframe>").attr("src", videoUrl).attr("frameborder", 0).attr('allowFullScreen', '').addClass("professional-media card-video");
 
-        var cardTitle = $("<div>").addClass("card-content").append(pName,pTitle);
+        var cardTitle = $("<div>").addClass("card-content").append(pName, pTitle);
         var cardImg = $("<div>").addClass("card-image").append(pImg);
         var cardBody = $("<div>").addClass("card-content card-body-text").append(pBio);
         var cardVideo = $("<div>").addClass("card-image").append(pVideo);
-        var boxDiv = $("<div>").addClass("card").append(cardTitle,cardImg,cardBody,cardVideo);
+        var boxDiv = $("<div>").addClass("card").append(cardTitle, cardImg, cardBody, cardVideo);
         var colDiv = $("<div>").addClass("col-sm-6 col-md-3").append(boxDiv);
 
         //Append data to featured women div
@@ -68,7 +68,7 @@ $(document).ready(function () {
 
 
     // function to load all careers
-        //Title
+    //Title
 
     database.ref('/Careers').on("child_added", function (snapshot) {
         // Store data in variable sv
@@ -83,9 +83,9 @@ $(document).ready(function () {
     });
 
     // function to load specific career
-        //Title
-        //Description
-        //Education Requirements
+    //Title
+    //Description
+    //Education Requirements
     database.ref('/Careers').orderByChild("identifier").equalTo('C001').on("child_added", function (snapshot) {
         // Store data in variables
         sv = snapshot.val();
@@ -93,27 +93,15 @@ $(document).ready(function () {
         description = sv.description;
         education = sv.education;
 
-        // Check that data was loaded correctly
-        console.log('***---------------------***');
-
-        console.log('***SPECIFIC CAREER***');
-
-        console.log('TITLE: ' + title);
-        console.log('EDUCATION: ' + education);
-        console.log('DESCRIPTION: ' + description);
-
-        console.log('***---------------------***');
-
 
         //Append data to html
 
     });
 
 
-
     // ADD DATA TO FIREBASE (FOR DATA INITIALIZATION ONLY)
 
-    function addProfessionalsData(){
+    function addProfessionalsData() {
 
         name = 'Chasity Wright';
         title = 'Tech CEO and Founder';
@@ -137,25 +125,27 @@ $(document).ready(function () {
     }
 
 
-    function addCareerData(){
+    function addCareerData() {
 
-        title = 'Test Position 2';
-        description = 'Lorem ipsum dolor sit amet, no eos stet utinam munere. Accumsan offendit usu id, at usu adhuc nominavi. Eu atomorum persecuti quaerendum est, vero scripta definitiones at has. Erant delicatissimi vis cu, te duo modo nibh intellegat, quo tollit sententiae ex. Sed an detraxit definitionem, pro detracto intellegat elaboraret id, ad vix vivendo deserunt invenire. Est perpetua intellegam in.';
-        education = 'Test Education';
-        id = 'C002';
+        title = 'Zoologist';
+        description = 'Study the characteristics and habitats of animals and wildlife.';
+        imgUrl = '';
+        education = '';
+        id = 'C003';
 
         // Send data to firebase
         database.ref('/Careers').push({
             identifier: id,
             title: title,
             description: description,
+            image_url: imgUrl,
             education: education
         });
 
     }
 
 
-   // addCareerData();
-   // addProfessionalsData();
+    // addCareerData();
+    // addProfessionalsData();
 
 });
