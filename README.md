@@ -12,6 +12,7 @@ https://www.google.com "Google's Homepage")
 *  HTML
 *  CSS
 *  JavaScript
+*  JQuery
 *  Bootstrap
 *  Materialize
 *  Google Firebase
