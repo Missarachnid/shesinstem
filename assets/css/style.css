@@ -194,6 +194,10 @@ MEDIA QUERIES
     .jumbo-junior .h1, .jumbo-junior h1 {
         font-size: 130px;
     }
+
+    .navbar li {
+        width: auto !important;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -217,4 +221,12 @@ MEDIA QUERIES
     color: #FFFFFF;
     text-align: left;
 
+}
+
+.navbar-form {
+    margin: 0;
+}
+
+.navbar li {
+    width: 100%;
 }

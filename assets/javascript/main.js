@@ -25,6 +25,12 @@ $(document).ready(function () {
     var sv;
     var careerTypeSelected;
 
+    $('select').material_select();
+
+    $(".dropdown-button").dropdown({hover: false, belowOrigin: true, constrain_width: false, alignment: 'right'});
+
+    $(".button-collapse").sideNav();
+
 
     // Load top 4 Professionals
     loadTop4Proffesionals();
@@ -89,7 +95,6 @@ $(document).ready(function () {
                 //Append data to html
 
 
-
                 //Create html variables for data
                 var cTitle = $("<h4>").addClass("text-center").append(title);
                 var cImg = $("<img>").attr("src", imgUrl).addClass(
@@ -100,8 +105,8 @@ $(document).ready(function () {
                 var cardTitle = $("<div>").addClass("card-content").append(cTitle);
                 var cardImg = $("<div>").addClass("card-image").append(cImg);
                 var cardBody = $("<div>").addClass("card-content card-body-text").append(
-                    cDescr,cEduc);
-                var boxDiv = $("<div>").addClass("card hoverable").append(cardTitle, cardImg, cardBody );
+                    cDescr, cEduc);
+                var boxDiv = $("<div>").addClass("card hoverable").append(cardTitle, cardImg, cardBody);
                 var colDiv = $("<div>").addClass("professional-card col-sm-6 col-md-3 col-lg-2").append(boxDiv);
 
                 //Append data to featured women div
@@ -109,7 +114,7 @@ $(document).ready(function () {
 
 
             });
-        if (careerTypeSelected === 'S'){
+        if (careerTypeSelected === 'S') {
             $("#career-type").append("Science ");
 
         }
@@ -159,6 +164,12 @@ $(document).ready(function () {
         localStorage.setItem("careerTypeSelected", careerTypeSelected);
 
 
+    });
+
+
+    $(".dropdown-button").click(function () {
+
+        console.log("HI")
     });
 
 
