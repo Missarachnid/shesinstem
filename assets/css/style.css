@@ -186,6 +186,10 @@ MEDIA QUERIES
     .stem-letter {
         width: auto;
     }
+
+    .jumbo-junior .h1, .jumbo-junior h1 {
+        font-size: 130px;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -201,4 +205,12 @@ MEDIA QUERIES
 
 .navbar-brand {
     padding-top: 5px;
+}
+
+.jumbo-junior h1 {
+    font-family: 'Share Tech', sans-serif;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: left;
+
 }
