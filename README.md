@@ -30,6 +30,6 @@ https://missarachnid.github.io/shesinstem/
 *  Melanie Heins
 *  Kimberly Owens
 
-##Acknowledgments
+## Acknowledgments
 *  Women Who Code Atlanta: members, mentors and especially the directors!
 *  For letting us interview them: Chasity Wright, Beth Laing, Sarrah Vesselov, Jennifer Bland.
