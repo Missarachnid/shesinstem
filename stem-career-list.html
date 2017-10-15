@@ -29,6 +29,7 @@
     <!--FONTS-->
     <link href="https://fonts.googleapis.com/css?family=Anton|Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Seaweed+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech" rel="stylesheet">
     <!-- Link to jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Compiled and minified Materialize JavaScript -->
@@ -67,24 +68,26 @@
                         <li><a href="#">Engineering</a></li>
                         <li><a href="#">Mathematics</a></li>
                     </ul>
-                </li><li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                   aria-expanded="true">Jobs <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Jobs</a></li>
-                    <li><a href="#">Internship</a></li>
-                </ul>
-            </li><li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                   aria-expanded="true">About <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">About She's in STEM</a></li>
-                    <li><a href="#">How it Works</a></li>
-                    <li><a href="#">About Careers</a></li>
-                    <li><a href="#">Global Testimonials</a></li>
-                    <li><a href="#">FAQ</a></li>
-                </ul>
-            </li>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="true">Jobs <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Internship</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="true">About <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">About She's in STEM</a></li>
+                        <li><a href="#">How it Works</a></li>
+                        <li><a href="#">About Careers</a></li>
+                        <li><a href="#">Global Testimonials</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                        aria-expanded="true">Profile<span class="caret"></span></a>
@@ -101,9 +104,17 @@
         </div>
     </div>
 </nav>
-<div id="main-body" class="jumbotron">
+<div id="main-body" class="jumbotron jumbo-junior">
     <div class="container">
-        <img class="img-logo img-responsive" src="assets/images/logowhitewithtext4.png" alt="Logo - She's in STEM">
+        <div class="row valign-wrapper">
+            <div class="col-12 col-md-4">
+                <img class="img-logo img-responsive" src="assets/images/logowhitewithtext4.png"
+                     alt="Logo - She's in STEM" style="max-height: 230px;">
+            </div>
+            <div class="col-12 col-md-8">
+                <h1>Careers</h1>
+            </div>
+        </div>
     </div>
 </div>
 <div class="container-fluid">
@@ -112,17 +123,25 @@
             <div class="col-xs-12">
                 <p class="stem-title text-center">Learn & Apply Your</p>
                 <div id="stem-link-container" class="text-center">
-                    <a class="" href="stem-career-list.html"><img class="stem-letter z-depth-3" src="assets/images/stem/s2.png" alt="Science" type="S"></a>
-                    <a class="" href="stem-career-list.html"><img class="stem-letter z-depth-3" src="assets/images/stem/t2.png" alt="Technology" type="T"></a>
-                    <a class="" href="stem-career-list.html"><img class="stem-letter z-depth-3" src="assets/images/stem/e2.png" alt="Engineering" type="E"></a>
-                    <a class="" href="stem-career-list.html"><img class="stem-letter z-depth-3" src="assets/images/stem/m2.png" alt="Math" type="M"></a>
+                    <a class="" href="stem-career-list.html"><img class="stem-letter z-depth-3"
+                                                                  src="assets/images/stem/s2.png" alt="Science"
+                                                                  type="S"></a>
+                    <a class="" href="stem-career-list.html"><img class="stem-letter z-depth-3"
+                                                                  src="assets/images/stem/t2.png" alt="Technology"
+                                                                  type="T"></a>
+                    <a class="" href="stem-career-list.html"><img class="stem-letter z-depth-3"
+                                                                  src="assets/images/stem/e2.png" alt="Engineering"
+                                                                  type="E"></a>
+                    <a class="" href="stem-career-list.html"><img class="stem-letter z-depth-3"
+                                                                  src="assets/images/stem/m2.png" alt="Math"
+                                                                  type="M"></a>
                 </div>
             </div><!--End Col-Md-12 Section STEM-->
         </div><!--End Row Section STEM-->
     </section><!--End Section STEM-->
 
     <section id="careers">
-        <p class="career-title text-center"><span id="career-type"></span>Careers</p>
+        <h1 class="career-title text-center"><span id="career-type"></span>Careers</h1>
         <div id="featured-careers" class="row">
             <!--End Col-4-Md Section Careers-->
         </div><!--End Row 1 Section Careers-->
