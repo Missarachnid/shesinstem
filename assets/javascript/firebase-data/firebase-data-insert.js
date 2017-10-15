@@ -78,7 +78,7 @@ $(document).ready(function () {
     }
 
 
-    addCareerData();
+    // addCareerData();
     // addProfessionalsData();
 
 
