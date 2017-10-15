@@ -151,6 +151,10 @@ font-family: 'Roboto', sans-serif;
     width: 20%;
 }
 
+.responsive-img {
+  padding: 30px;
+}
+
 /****
 MEDIA QUERIES
  */
