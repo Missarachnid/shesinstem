@@ -101,7 +101,7 @@ $(document).ready(function () {
                 var cardImg = $("<div>").addClass("card-image").append(cImg);
                 var cardBody = $("<div>").addClass("card-content card-body-text").append(
                     cDescr,cEduc);
-                var boxDiv = $("<div>").addClass("card").append(cardTitle, cardImg, cardBody );
+                var boxDiv = $("<div>").addClass("card hoverable").append(cardTitle, cardImg, cardBody );
                 var colDiv = $("<div>").addClass("professional-card col-sm-6 col-md-3 col-lg-2").append(boxDiv);
 
                 //Append data to featured women div
