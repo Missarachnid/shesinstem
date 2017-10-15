@@ -225,6 +225,7 @@ MEDIA QUERIES
 
 .navbar-form {
     margin: 0;
+    height: 60px;
 }
 
 .navbar li {
