@@ -91,7 +91,7 @@ $(document).ready(function () {
 
 
                 //Create html variables for data
-                var cTitle = $("<h4>").addClass("profile text-center").append(title);
+                var cTitle = $("<h4>").addClass("text-center").append(title);
                 var cImg = $("<img>").attr("src", imgUrl).addClass(
                     "professional-media");
                 var cDescr = $("<p>").addClass("profile").append(description);

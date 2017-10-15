@@ -1,0 +1,134 @@
+	name = 'Beth Laing';
+        title = 'Software Quality Assurance';
+        imgUrl = 'http://drive.google.com/uc?export=view&amp;id=0B49S6PJi30xWSmFadVAxMHdQTlE';
+        videoUrl = 'https://www.youtube.com/embed/ECvngvg9oI8';
+        bio = 'Beth is a QA/Developer/Scrum Master at CNN in Atlanta. She is a Director of Women Who Code Atlanta.';
+        education = '';
+        id = 'P001';
+        
+        name = 'Sarrah Vesselov';
+        title = 'UX Designer';
+        imgUrl = 'http://drive.google.com/uc?export=view&amp;id=0B49S6PJi30xWRElXRmFsUkVRTkU';
+        videoUrl = 'https://www.youtube.com/embed/jUqaLuHIJuk';
+        bio = '';
+        education = '';
+        id = 'P002';
+
+        name = 'Jennifer Bland';
+        title = 'Software Engineer';
+        imgUrl = 'http://drive.google.com/uc?export=view&amp;id=0B49S6PJi30xWekY4QXhRTE5SdEk';
+        videoUrl = 'https://www.youtube.com/embed/ZTWRKvwEhw8';
+        bio = 'Jennifer is a Senior Software Engineer at CNN in Atlanta. She is the founder of code prep.io.';
+        education = '';
+        id = 'P003';
+
+        name = 'Chasity Wright';
+        title = 'Tech CEO and Founder';
+        imgUrl = 'http://drive.google.com/uc?export=view&amp;id=0B49S6PJi30xWb1RKTklGcFpqTW8';
+        videoUrl = 'https://www.youtube.com/embed/UmRgv-Gmgws';
+        bio = 'Chasity is the CEO and Founder of Wright Tek Consulting Group. She is also a veteran of the United States Air Force.';
+        education = '';
+        id = 'P004';
+
+
+	title = 'Astronomer';
+        description = 'Observe and study stars, planets, and other astronomical phenomena.';
+        imgUrl = '';
+        education = '';
+        id = 'C001';
+
+
+	title = 'Chemist';
+        description = 'Conduct research on chemicals using experiments or observation.';
+        imgUrl = '';
+        education = '';
+        id = 'C002';
+
+
+	title = 'Zoologist';
+        description = 'Study the characteristics and habitats of animals and wildlife.';
+        imgUrl = '';
+        education = '';
+        id = 'C003';
+
+
+
+
+	title = 'Market Research Analysts';
+        description = 'Market Research Analysts learn about the market conditions in local, regional, or national areas to determine how well a product or service will sell. They may gather information about competitors, prices, sales, and ways to market a product.';
+        imgUrl = "assets/images/stem/mathematics/analyst.jpg";
+        education = '';
+        id = 'C001';
+	type = 'M';
+
+
+	title = 'Economists';
+        description = 'Economists study economic issues, like labor supply and demand, fiscal policy, or others. They may collect or analyze data and write research studies.';
+        imgUrl = "assets/images/stem/mathematics/economist.jpg";
+        education = '';
+        id = 'C002';
+	type = 'M';
+
+
+	title = 'Mathematicians';
+        description = 'Mathematicians conduct research in mathematics or in mathematical applications, such as science, management, or other fields.';
+        imgUrl = "assets/images/stem/mathematics/mathematician.jpeg";
+        education = '';
+        id = 'C003';
+	type = 'M';
+
+
+
+
+	title = 'Biomedical Engineer';
+        description = 'Biomedical engineers evaluate problems in biology and medicine, and design solutions to those problems. They apply specialized knowledge to the design and development of a wide range of biological and medical products, with the goal of improving health care for patients and practitioners alike.';
+        imgUrl = "assets/images/stem/engineering/biomedical.jpg";
+        education = '';
+        id = 'C007';
+	type = 'E';
+
+
+	title = 'Marine Engineer';
+        description = 'Marine engineers design, develop, and test the mechanical systems of marine vessels, such as steering, propulsion, power supply, and navigation. These systems are used on marine vessels of all kinds, including submarines, aircraft carriers, sailboats, tankers, and more.';
+        imgUrl = "assets/images/stem/engineering/marine.jpg";
+        education = '';
+        id = 'C008';
+	type = 'E';
+
+
+	title = 'Aerospace Engineer';
+        description = 'Aerospace engineering and operations technicians repair and test airplanes and other flying machines.';
+        imgUrl = "assets/images/stem/engineering/aerospace.jpeg";
+        education = '';
+        id = 'C009';
+	type = 'E';
+
+
+
+	title = 'Computer Programming';
+        description = 'Computer programmers develop code used to create software programs designed to tell computers how to process information and perform specific tasks.';
+        imgUrl = "assets/images/stem/technology/programming.jpeg";
+        education = '';
+        id = 'C010';
+	type = 'T';
+
+
+	title = 'Software Engineer';
+        description = 'Computer software engineers are computer scientists who develop software programs that instruct computer how to process information and perform tasks. They design software for computer games, word processing, operating systems, and Internet websites.';
+        imgUrl = "assets/images/stem/technology/software-engineer.jpeg";
+        education = '';
+        id = 'C011';
+	type = 'T';
+
+
+	title = 'Computer Hardware Engineers';
+        description = 'Computer hardware engineers design, develop and install computer hardware and physical computer systems. They're also responsible for maintaining, upgrading and optimizing computer hardware and equipment.';
+        imgUrl = "assets/images/stem/technology/hardware-engineer.jpeg";
+        education = '';
+        id = 'C012';
+	type = 'T';
+
+
+
+
+
