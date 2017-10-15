@@ -23,11 +23,20 @@ $(document).ready(function () {
     var description;
     var id;
     var sv;
+    var careerTypeSelected;
+
+
+    // Load top 4 Professionals
+    loadTop4Proffesionals();
+
+    // Load selected career type
+    careerTypeSelected = localStorage.getItem("careerTypeSelected");
+    loadCareerBySelected(careerTypeSelected);
 
 
     // function to load all professionals
 
-    function loadTop5Proffesionals() {
+    function loadTop4Proffesionals() {
         database.ref('/Professionals').limitToFirst(4).on("child_added", function (snapshot) {
             // Store data in variable sv
             sv = snapshot.val();
@@ -63,109 +72,46 @@ $(document).ready(function () {
         });
     }
 
-    loadTop5Proffesionals();
-
-
-
-    // function to load specific professional
-    database.ref('/Professionals').orderByChild("identifier").equalTo('P001')
-        .on("child_added", function (snapshot) {
-            // Store data in variables
-            sv = snapshot.val();
-            name = sv.name;
-            title = sv.title;
-            imgUrl = sv.image_url;
-            videoUrl = sv.video_url;
-            bio = sv.bio;
-            education = sv.education;
-        });
-
-
-    // function to load all careers
-    //Title
-
-    database.ref('/Careers').on("child_added", function (snapshot) {
-        // Store data in variable sv
-        sv = snapshot.val();
-        title = sv.title;
-
-        // Check that data was loaded correctly
-        console.log('TITLE: ' + title);
-
-        //Append New rows to employee tables body
-
-    });
 
     // function to load specific career
-    //Title
-    //Description
-    //Education Requirements
-    database.ref('/Careers').orderByChild("identifier").equalTo('C001').on(
-        "child_added",
-        function (snapshot) {
-            // Store data in variables
-            sv = snapshot.val();
-            title = sv.title;
-            description = sv.description;
-            education = sv.education;
+    function loadCareerBySelected(x) {
+        database.ref('/Careers').orderByChild("type").equalTo(x).on(
+            "child_added",
+            function (snapshot) {
+                // Store data in variables
+                sv = snapshot.val();
+                title = sv.title;
+                description = sv.description;
+                education = sv.education;
+                imgUrl = sv.image_url;
+
+                console.log(sv);
+                //Append data to html
 
 
-            //Append data to html
 
-        });
+                //Create html variables for data
+                var cTitle = $("<h4>").addClass("profile text-center").append(title);
+                var cImg = $("<img>").attr("src", imgUrl).addClass(
+                    "professional-media");
+                var cDescr = $("<p>").addClass("profile").append(description);
+                var cEduc = $("<p>").addClass("profile").append(education);
+
+                var cardTitle = $("<div>").addClass("card-content").append(cTitle);
+                var cardImg = $("<div>").addClass("card-image").append(cImg);
+                var cardBody = $("<div>").addClass("card-content card-body-text").append(
+                    cDescr,cEduc);
+                var boxDiv = $("<div>").addClass("card").append(cardTitle, cardImg, cardBody );
+                var colDiv = $("<div>").addClass("professional-card col-sm-6 col-md-3 col-lg-2").append(boxDiv);
+
+                //Append data to featured women div
+                $("#featured-careers").prepend(colDiv);
 
 
-    // ADD DATA TO FIREBASE (FOR DATA INITIALIZATION ONLY)
-
-    function addProfessionalsData() {
-
-        name = 'Chasity Wright';
-        title = 'Tech CEO and Founder';
-        imgUrl =
-            'http://drive.google.com/uc?export=view&amp;id=0B49S6PJi30xWb1RKTklGcFpqTW8';
-        videoUrl = 'https://www.youtube.com/embed/UmRgv-Gmgws';
-        bio =
-            'Chasity is the CEO and Founder of Wright Tek Consulting Group. She is also a veteran of the United States Air Force.';
-        education = '';
-        id = 'P004';
-
-        // Send data to firebase
-        database.ref('/Professionals').push({
-            identifier: id,
-            name: name,
-            title: title,
-            image_url: imgUrl,
-            video_url: videoUrl,
-            bio: bio,
-            education: education
-        });
+            });
 
     }
 
-
-    function addCareerData() {
-
-        title = 'Zoologist';
-        description =
-            'Study the characteristics and habitats of animals and wildlife.';
-        imgUrl = '';
-        education = '';
-        id = 'C003';
-
-        // Send data to firebase
-        database.ref('/Careers').push({
-            identifier: id,
-            title: title,
-            description: description,
-            image_url: imgUrl,
-            education: education
-        });
-
-    }
-
-
-    // addCareerData();
-    // addProfessionalsData();
 
     // Srollfire for pop-up toasts
     var options = [{
@@ -187,5 +133,17 @@ $(document).ready(function () {
         }
     },];
     Materialize.scrollFire(options);
+
+
+    $('#stem-link-container').on('click', '.stem-letter', function () {
+        careerTypeSelected = $(this).attr("type");
+        // Clear sessionStorage
+        localStorage.clear();
+        // Store all content into sessionStorage
+        localStorage.setItem("careerTypeSelected", careerTypeSelected);
+
+
+    });
+
 
 });
