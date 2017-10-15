@@ -23,6 +23,7 @@ $(document).ready(function () {
     var description;
     var id;
     var sv;
+    var type;
 
 
     // ADD DATA TO FIREBASE (FOR DATA INITIALIZATION ONLY)
@@ -55,12 +56,14 @@ $(document).ready(function () {
 
     function addCareerData() {
 
-        title = 'Zoologist';
-        description =
-            'Study the characteristics and habitats of animals and wildlife.';
-        imgUrl = '';
+        title = 'Computer Hardware Engineers';
+        description = "Computer hardware engineers design, develop and install computer hardware and physical computer systems. They're also responsible for maintaining, upgrading and optimizing computer hardware and equipment.";
+        imgUrl = "assets/images/stem/technology/hardware-engineer.jpeg";
         education = '';
-        id = 'C003';
+        id = 'C012';
+        type = 'T';
+
+
 
         // Send data to firebase
         database.ref('/Careers').push({
@@ -68,6 +71,7 @@ $(document).ready(function () {
             title: title,
             description: description,
             image_url: imgUrl,
+            type: type,
             education: education
         });
 
