@@ -1,3 +1,84 @@
+<<<<<<< HEAD
+$(document).ready(function() {
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCIrDfTGspIC5888qUdMI4M1DyiKp9ZiyI",
+    authDomain: "shesinstem01.firebaseapp.com",
+    databaseURL: "https://shesinstem01.firebaseio.com",
+    projectId: "shesinstem01",
+    storageBucket: "shesinstem01.appspot.com",
+    messagingSenderId: "1073750951149"
+  };
+  firebase.initializeApp(config);
+
+  // Assign the reference to the database to a variable named 'database'
+  var database = firebase.database();
+
+  // Initialize Global Variables
+  var name;
+  var title;
+  var imgUrl;
+  var videoUrl;
+  var bio;
+  var education;
+  var description;
+  var id;
+  var sv;
+
+
+  // function to load all professionals
+  database.ref('/Professionals').limitToFirst(4).on("child_added", function(
+    snapshot) {
+    // Store data in variable sv
+    sv = snapshot.val();
+    name = sv.name;
+    title = sv.title;
+    imgUrl = sv.image_url;
+    videoUrl = sv.video_url;
+    bio = sv.bio;
+    education = sv.education;
+
+    //Create html variables for data
+    var pName = $("<h3>").addClass("text-center").append(name);
+    var pImg = $("<img>").attr("src", imgUrl).addClass(
+      "professional-media");
+    var pTitle = $("<p>").addClass("profile text-center").append(title);
+    var pBio = $("<p>").addClass("profile").append(bio);
+    var pVideo = $("<iframe>").attr("src", videoUrl).attr("frameborder",
+      0).attr('allowFullScreen', '').addClass(
+      "professional-media card-video");
+
+    var cardTitle = $("<div>").addClass("card-content").append(pName,
+      pTitle);
+    var cardImg = $("<div>").addClass("card-image").append(pImg);
+    var cardBody = $("<div>").addClass("card-content card-body-text").append(
+      pBio);
+    var cardVideo = $("<div>").addClass("card-image").append(pVideo);
+    var boxDiv = $("<div>").addClass("card").append(cardTitle, cardImg,
+      cardBody, cardVideo);
+    var colDiv = $("<div>").addClass("col-sm-6 col-md-3").append(boxDiv);
+
+    //Append data to featured women div
+    $("#featured-women").prepend(colDiv);
+  });
+
+  // function to load specific professional
+  database.ref('/Professionals').orderByChild("identifier").equalTo('P001')
+    .on("child_added", function(snapshot) {
+      // Store data in variables
+      sv = snapshot.val();
+      name = sv.name;
+      title = sv.title;
+      imgUrl = sv.image_url;
+      videoUrl = sv.video_url;
+      bio = sv.bio;
+      education = sv.education;
+    });
+
+
+  // function to load all careers
+  //Title
+=======
 $(document).ready(function () {
     // Initialize Firebase
     var config = {
@@ -69,19 +150,46 @@ $(document).ready(function () {
 
     // function to load all careers
     //Title
+>>>>>>> f9f83e15961f0fac457fc121c5c8d71986dcdd39
 
-    database.ref('/Careers').on("child_added", function (snapshot) {
-        // Store data in variable sv
-        sv = snapshot.val();
-        title = sv.title;
+  database.ref('/Careers').on("child_added", function(snapshot) {
+    // Store data in variable sv
+    sv = snapshot.val();
+    title = sv.title;
 
-        // Check that data was loaded correctly
-        console.log('TITLE: ' + title);
+    // Check that data was loaded correctly
+    console.log('TITLE: ' + title);
 
-        //Append New rows to employee tables body
+    //Append New rows to employee tables body
 
-    });
+  });
 
+<<<<<<< HEAD
+  // function to load specific career
+  //Title
+  //Description
+  //Education Requirements
+  database.ref('/Careers').orderByChild("identifier").equalTo('C001').on(
+    "child_added",
+    function(snapshot) {
+      // Store data in variables
+      sv = snapshot.val();
+      title = sv.title;
+      description = sv.description;
+      education = sv.education;
+
+      // Check that data was loaded correctly
+      console.log('***---------------------***');
+
+      console.log('***SPECIFIC CAREER***');
+
+      console.log('TITLE: ' + title);
+      console.log('EDUCATION: ' + education);
+      console.log('DESCRIPTION: ' + description);
+
+      console.log('***---------------------***');
+
+=======
     // function to load specific career
     //Title
     //Description
@@ -93,38 +201,67 @@ $(document).ready(function () {
         description = sv.description;
         education = sv.education;
 
+>>>>>>> f9f83e15961f0fac457fc121c5c8d71986dcdd39
 
-        //Append data to html
+      //Append data to html
 
     });
 
 
+<<<<<<< HEAD
+
+  // ADD DATA TO FIREBASE (FOR DATA INITIALIZATION ONLY)
+
+  function addProfessionalsData() {
+=======
     // ADD DATA TO FIREBASE (FOR DATA INITIALIZATION ONLY)
 
     function addProfessionalsData() {
+>>>>>>> f9f83e15961f0fac457fc121c5c8d71986dcdd39
 
-        name = 'Chasity Wright';
-        title = 'Tech CEO and Founder';
-        imgUrl = 'http://drive.google.com/uc?export=view&amp;id=0B49S6PJi30xWb1RKTklGcFpqTW8';
-        videoUrl = 'https://www.youtube.com/embed/UmRgv-Gmgws';
-        bio = 'Chasity is the CEO and Founder of Wright Tek Consulting Group. She is also a veteran of the United States Air Force.';
-        education = '';
-        id = 'P004';
+    name = 'Chasity Wright';
+    title = 'Tech CEO and Founder';
+    imgUrl =
+      'http://drive.google.com/uc?export=view&amp;id=0B49S6PJi30xWb1RKTklGcFpqTW8';
+    videoUrl = 'https://www.youtube.com/embed/UmRgv-Gmgws';
+    bio =
+      'Chasity is the CEO and Founder of Wright Tek Consulting Group. She is also a veteran of the United States Air Force.';
+    education = '';
+    id = 'P004';
 
-        // Send data to firebase
-        database.ref('/Professionals').push({
-            identifier: id,
-            name: name,
-            title: title,
-            image_url: imgUrl,
-            video_url: videoUrl,
-            bio: bio,
-            education: education
-        });
+    // Send data to firebase
+    database.ref('/Professionals').push({
+      identifier: id,
+      name: name,
+      title: title,
+      image_url: imgUrl,
+      video_url: videoUrl,
+      bio: bio,
+      education: education
+    });
 
-    }
+  }
 
 
+<<<<<<< HEAD
+  function addCareerData() {
+
+    title = 'Test Position 2';
+    description =
+      'Lorem ipsum dolor sit amet, no eos stet utinam munere. Accumsan offendit usu id, at usu adhuc nominavi. Eu atomorum persecuti quaerendum est, vero scripta definitiones at has. Erant delicatissimi vis cu, te duo modo nibh intellegat, quo tollit sententiae ex. Sed an detraxit definitionem, pro detracto intellegat elaboraret id, ad vix vivendo deserunt invenire. Est perpetua intellegam in.';
+    education = 'Test Education';
+    id = 'C002';
+
+    // Send data to firebase
+    database.ref('/Careers').push({
+      identifier: id,
+      title: title,
+      description: description,
+      education: education
+    });
+
+  }
+=======
     function addCareerData() {
 
         title = 'Zoologist';
@@ -141,11 +278,32 @@ $(document).ready(function () {
             image_url: imgUrl,
             education: education
         });
+>>>>>>> f9f83e15961f0fac457fc121c5c8d71986dcdd39
 
+
+  // addCareerData();
+  // addProfessionalsData();
+
+<<<<<<< HEAD
+  // Srollfire for pop-up toasts
+  var options = [{
+    selector: '.stem-link-container',
+    offset: 0,
+    callback: function() {
+      Materialize.toast("Click the letters to explore your options.",
+        4500);
     }
-
-
+  }, {
+    selector: '.soc-media',
+    offset: 0,
+    callback: function() {
+      Materialize.toast("Connect with us on social media!", 4500);
+    }
+  }, ];
+  Materialize.scrollFire(options);
+=======
     // addCareerData();
     // addProfessionalsData();
+>>>>>>> f9f83e15961f0fac457fc121c5c8d71986dcdd39
 
 });
