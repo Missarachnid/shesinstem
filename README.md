@@ -22,7 +22,7 @@ https://www.google.com "Google's Homepage")
 ## Team Memebers
 *  Melissa Kepler
 *  LaQuata Sumter
-*  Valerie Regas
+*  Valarie Regas
 *  Faith H. Wallace, Ph.D.
 *  Crystal Bass
 *  Tatiana Williamson

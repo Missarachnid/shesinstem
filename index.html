@@ -35,6 +35,10 @@
 
     <link href="https://fonts.googleapis.com/css?family=Seaweed+Script" rel="stylesheet">
 
+    <script type="text/javascript" src="assets/javascript/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/bootstrap.js"></script>
+
+
 </head><!--End Head Tags-->
 
 <!--BODY-->
@@ -53,7 +57,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown open">
+                <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                        aria-expanded="true">About <span class="caret"></span></a>
                     <ul class="dropdown-menu">
@@ -64,7 +68,7 @@
                         <li><a href="#">FAQ</a></li>
                     </ul>
                 </li>
-                <li class="dropdown open">
+                <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                        aria-expanded="true">Profile<span class="caret"></span></a>
                     <ul class="dropdown-menu">
@@ -79,21 +83,21 @@
         </div>
     </div>
 </nav>
-<div class="jumbotron">
+<div id="main-body" class="jumbotron">
     <div class="container">
-        <img class="img-logo" src="assets/images/logowhitewithtext2.png">
+        <img class="img-logo img-responsive" src="assets/images/logowhitewithtext2.png">
     </div>
 </div>
-<div id="main-body" class="container-fluid">
+<div class="container-fluid">
     <section id="stem">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-xs-12">
                 <p class="stem-title text-center">Learn & Apply Your</p>
                 <div class="stem-link-container text-center">
-                    <a href=""><img src="assets/images/stem/s.png"></a>
-                    <a href=""><img src="assets/images/stem/t.png"></a>
-                    <a href=""><img src="assets/images/stem/e.png"></a>
-                    <a href=""><img src="assets/images/stem/m.png"></a>
+                    <a href="stem-career-list.html"><img class="stem-letter" src="assets/images/stem/s.png"></a>
+                    <a href="stem-career-list.html"><img class="stem-letter" src="assets/images/stem/t.png"></a>
+                    <a href="stem-career-list.html"><img class="stem-letter" src="assets/images/stem/e.png"></a>
+                    <a href="stem-career-list.html"><img class="stem-letter" src="assets/images/stem/m.png"></a>
                 </div>
             </div><!--End Col-Md-12 Section STEM-->
         </div><!--End Row Section STEM-->
@@ -113,36 +117,36 @@
             </div><!--END Col-Md-12 Section Women-->
         </div><!--END Row 2 Section Women-->
     </section><!--END Section Women-->
-  </div>
-    <section id="social-media" class="soc-media">
-        <p class="social-media-title text-center">Get Involved! Join us on Social Media</p>
-        <div class="row social-media-icons text-center">
-            <div class="col-xs-2"><a href="https://www.facebook.com/shesinstem"><i
-                    class="fa fa-facebook-official fa-3x text-center" aria-hidden="true"></i></a></div>
-            <!--End Col-2-Md Section Social-Media-->
+</div>
+<section id="social-media" class="soc-media">
+    <p class="social-media-title text-center">Get Involved! Join us on Social Media</p>
+    <div class="row social-media-icons text-center">
+        <div class="col-xs-2"><a href="https://www.facebook.com/shesinstem"><i
+                class="fa fa-facebook-official fa-3x text-center" aria-hidden="true"></i></a></div>
+        <!--End Col-2-Md Section Social-Media-->
 
-            <div class="col-xs-2"><a href="https://twitter.com/shesinstem"><i
-                    class="fa fa-twitter-square fa-3x text-center" aria-hidden="true"></i></a></div>
-            <!--End Col-2-Md Section Social-Media-->
+        <div class="col-xs-2"><a href="https://twitter.com/shesinstem"><i
+                class="fa fa-twitter-square fa-3x text-center" aria-hidden="true"></i></a></div>
+        <!--End Col-2-Md Section Social-Media-->
 
-            <div class="col-xs-2"><a href="https://twitter.com/shesinstem"><i class="fa fa-instagram fa-3x text-center"
-                                                                              aria-hidden="true"></i></a></div>
-            <!--End Col-2-Md Section Social-Media-->
+        <div class="col-xs-2"><a href="https://twitter.com/shesinstem"><i class="fa fa-instagram fa-3x text-center"
+                                                                          aria-hidden="true"></i></a></div>
+        <!--End Col-2-Md Section Social-Media-->
 
-            <div class="col-xs-2"><i class="fa fa-youtube-square fa-3x text-center" aria-hidden="true"></i></div>
-            <!--End Col-2-Md Section Social-Media-->
+        <div class="col-xs-2"><i class="fa fa-youtube-square fa-3x text-center" aria-hidden="true"></i></div>
+        <!--End Col-2-Md Section Social-Media-->
 
-            <div class="col-xs-2"><i class="fa fa-linkedin-square fa-3x text-center" aria-hidden="true"></i></div>
-            <!--End Col-2-Md Section Social-Media-->
+        <div class="col-xs-2"><i class="fa fa-linkedin-square fa-3x text-center" aria-hidden="true"></i></div>
+        <!--End Col-2-Md Section Social-Media-->
 
-            <div class="col-xs-2 text-center"><a href="https://medium.com/shes-in-s-t-e-m"><i class="fa fa-medium fa-3x"
-                                                                                              aria-hidden="true"></i></a>
-            </div><!--End Col-2-Md Section Social-Media-->
+        <div class="col-xs-2 text-center"><a href="https://medium.com/shes-in-s-t-e-m"><i class="fa fa-medium fa-3x"
+                                                                                          aria-hidden="true"></i></a>
+        </div><!--End Col-2-Md Section Social-Media-->
 
-        </div><!--End Row Section Social-Media-->
-    </section><!--End Section Social-Media-->
+    </div><!--End Row Section Social-Media-->
+</section><!--End Section Social-Media-->
 
-    <div class="container container-fluid">
+<div class="container container-fluid">
     <section id="contributors">
         <p class="contributors-title text-center">Meet Our Staff</p>
         <div class="row">
@@ -215,11 +219,9 @@
         <p>&copy; Copyright 2017 She's in STEM</p>
     </div>
 </footer>
-<script text="text/javascript" src="assets/javascript/jquery-3.2.1.min.js"></script>
 
 <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
 
-<script type="text/javascript" src="assets/javascript/bootstrap.js"></script>
 
 <script type="text/javascript" src="assets/javascript/main.js"></script>
 
