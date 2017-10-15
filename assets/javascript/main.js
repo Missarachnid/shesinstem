@@ -68,7 +68,7 @@ $(document).ready(function () {
             var colDiv = $("<div>").addClass("professional-card col-sm-6 col-md-3 col-lg-2").append(boxDiv);
 
             //Append data to featured women div
-            $("#featured-women").prepend(colDiv);
+            $("#featured-women").append(colDiv);
         });
     }
 
@@ -91,7 +91,7 @@ $(document).ready(function () {
 
 
                 //Create html variables for data
-                var cTitle = $("<h4>").addClass("profile text-center").append(title);
+                var cTitle = $("<h4>").addClass("text-center").append(title);
                 var cImg = $("<img>").attr("src", imgUrl).addClass(
                     "professional-media");
                 var cDescr = $("<p>").addClass("profile").append(description);
@@ -105,10 +105,26 @@ $(document).ready(function () {
                 var colDiv = $("<div>").addClass("professional-card col-sm-6 col-md-3 col-lg-2").append(boxDiv);
 
                 //Append data to featured women div
-                $("#featured-careers").prepend(colDiv);
+                $("#featured-careers").append(colDiv);
 
 
             });
+        if (careerTypeSelected === 'S'){
+            $("#career-type").append("Science ");
+
+        }
+        else if (careerTypeSelected === 'T') {
+            $("#career-type").append("Technology ");
+
+        }
+        else if (careerTypeSelected === 'E') {
+            $("#career-type").append("Engineering ");
+
+        }
+        else if (careerTypeSelected === 'M') {
+            $("#career-type").append("Mathematics ");
+
+        }
 
     }
 
