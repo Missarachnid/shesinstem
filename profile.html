@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--META TAGS-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <meta name="description" content="She's In STEM"/>
+
+    <title>She's In STEM</title>
+
+    <!-- Bootstrap, Fonts, Font Awesome, CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/fontawesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--Firebase-->
+    <script src="https://www.gstatic.com/firebasejs/4.5.1/firebase.js"></script>
+
+    <!--FONTS-->
+    <link href="https://fonts.googleapis.com/css?family=Anton|Roboto" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Seaweed+Script" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <script type="text/javascript" src="assets/javascript/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/bootstrap.js"></script>
+
+</head><!--End Head Tags-->
+
+<!--BODY-->
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">She's in STEM</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="true">About <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">About She's in STEM</a></li>
+                        <li><a href="#">How it Works</a></li>
+                        <li><a href="#">About Careers</a></li>
+                        <li><a href="#">Global Testimonials</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="true">Profile<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="profile.html">My Profile</a></li>
+                        <li><a href="#">Sign In</a></li>
+                        <li><a href="#">Register</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-right">
+                <input type="text" class="form-control" placeholder="Search...">
+            </form>
+        </div>
+    </div>
+</nav>
+<div id="main-body" class="jumbotron">
+    <div class="container">
+        <h1>My Profile</h1>
+    </div>
+</div>
+<div class="container-fluid">
+
+    <section id="profile-image">
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="card ">
+                    <div class="card-image">
+                        <i class="material-icons large">face</i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="basic-info">
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="card ">
+                    <div class="card-content">
+                        <span class="card-title">Basic Information</span>
+                    </div>
+                    <div class="card-content">
+                        <ul class="">
+                            <li>Name: <a href="#">Jane Doe</a></li>
+                            <li>Location: <a href="#">Atlanta, GA</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-me">
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="card ">
+                    <div class="card-content">
+                        <span class="card-title">About Me</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Vis ei cibo consul sanctus, cum cu minim congue, id duo nihil congue rationibus. Usu graeco
+                            maluisset in, noster lucilius nam an, omittam definiebas an eos. Diam tempor et eam.
+                            Molestie principes liberavisse eam cu, case vero phaedrum vim id. Vim cu tacimates
+                            neglegentur.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact-me">
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="card ">
+                    <div class="card-content">
+                        <span class="card-title">Contact Information</span>
+                    </div>
+                    <div class="card-content">
+                        <ul class="">
+                            <li>Twitter: <a href="#">twitter.com</a></li>
+                            <li>Facebook: <a href="#">facebook.com</a></li>
+                            <li>Email: <a href="#">email@email.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<section id="social-media" class="soc-media">
+    <p class="social-media-title text-center">Get Involved! Join us on Social Media</p>
+    <div class="row social-media-icons text-center">
+        <div class="col-xs-2"><a href="https://www.facebook.com/shesinstem"><i
+                class="fa fa-facebook-official fa-3x text-center" aria-hidden="true"></i></a></div>
+        <!--End Col-2-Md Section Social-Media-->
+
+        <div class="col-xs-2"><a href="https://twitter.com/shesinstem"><i
+                class="fa fa-twitter-square fa-3x text-center" aria-hidden="true"></i></a></div>
+        <!--End Col-2-Md Section Social-Media-->
+
+        <div class="col-xs-2"><a href="https://twitter.com/shesinstem"><i class="fa fa-instagram fa-3x text-center"
+                                                                          aria-hidden="true"></i></a></div>
+        <!--End Col-2-Md Section Social-Media-->
+
+        <div class="col-xs-2"><i class="fa fa-youtube-square fa-3x text-center" aria-hidden="true"></i></div>
+        <!--End Col-2-Md Section Social-Media-->
+
+        <div class="col-xs-2"><i class="fa fa-linkedin-square fa-3x text-center" aria-hidden="true"></i></div>
+        <!--End Col-2-Md Section Social-Media-->
+
+        <div class="col-xs-2 text-center"><a href="https://medium.com/shes-in-s-t-e-m"><i class="fa fa-medium fa-3x"
+                                                                                          aria-hidden="true"></i></a>
+        </div><!--End Col-2-Md Section Social-Media-->
+
+    </div><!--End Row Section Social-Media-->
+</section><!--End Section Social-Media-->
+
+
+<footer class="footer">
+    <div class="container ">
+        <p>&copy; Copyright 2017 She's in STEM</p>
+    </div>
+</footer>
+
+<script type="text/javascript" src="assets/javascript/main.js"></script>
+
+</body>
+</html>
